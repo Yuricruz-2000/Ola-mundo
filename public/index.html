@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="form-cadastro">
+            <h2>Criar Conta</h2>
+            <input type="text" id="cadastro-email" placeholder="Email" required>
+            <input type="password" id="cadastro-senha" placeholder="Senha" required>
+            <button id="btn-cadastrar">Cadastrar</button>
+            <p>Já tem conta? <a href="#" id="link-login">Faça Login</a></p>
+        </div>
+
+        <div class="form-container" id="form-login" style="display:none;">
+            <h2>Login</h2>
+            <input type="text" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-senha" placeholder="Senha" required>
+            <button id="btn-logar">Entrar</button>
+            <p>Não tem conta? <a href="#" id="link-cadastro">Cadastre-se</a></p>
+        </div>
+        
+        <p id="mensagem"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
